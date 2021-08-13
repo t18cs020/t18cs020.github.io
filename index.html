@@ -16,7 +16,9 @@
       var Date = now.getDate();
 
       target.innerHTML = Year + "年" + Month + "月" + Date + "日";
-     document.write("<img src='" + image_URL + Date + extension +"'>");
+     document.write(" <p class="resizeimage">
+		    <img src='" + image_URL + Date + extension +"' height="250">
+		      </p>");
     }
   </script>
  <style>
@@ -27,7 +29,5 @@
 <h1>毎日頼光</h1>
  <a>本日は:</a>
    <div id="DateTimeDisp"></div>
- <p class="resizeimage">
-  </p>
 </body>
 </html>
