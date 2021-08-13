@@ -9,12 +9,14 @@
     var now = new Date();
     function LoadProc() {
       var target = document.getElementById("DateTimeDisp");
-
+	image_URL = "images/";
+	extension = ".jpg";
       var Year = now.getFullYear();
       var Month = now.getMonth()+1;
       var Date = now.getDate();
 
       target.innerHTML = Year + "年" + Month + "月" + Date + "日";
+     document.write("<img src='" + image_URL + Date + extension +"'>");
     }
   </script>
  <style>
