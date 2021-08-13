@@ -16,9 +16,10 @@
       var Date = now.getDate();
 
       target.innerHTML = Year + "年" + Month + "月" + Date + "日";
-     document.write(" <p class="resizeimage">
+	let div1 = document.getElementById('div1');
+	div1.insertAdjacentHTML('afterend', '<p class="resizeimage">
 		    <img src='" + image_URL + Date + extension +"' height="250">
-		      </p>");
+		      </p>');
     }
   </script>
  <style>
@@ -29,5 +30,6 @@
 <h1>毎日頼光</h1>
  <a>本日は:</a>
    <div id="DateTimeDisp"></div>
+<div id="div1">
 </body>
 </html>
