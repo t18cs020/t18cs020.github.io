@@ -5,9 +5,23 @@
 <title>タイトルです</title>
 <meta name="viewport" content="width=device-width,
  initial-scale=1.0,user-scalable=yes" />
+   <script type="text/javascript">
+    var now = new Date();
+    function LoadProc() {
+      var target = document.getElementById("DateTimeDisp");
+
+      var Year = now.getFullYear();
+      var Month = now.getMonth()+1;
+      var Date = now.getDate();
+
+      target.innerHTML = Year + "年" + Month + "月" + Date + "日";
+    }
+  </script>
 </head>
-<body>
+<body onload="LoadProc();">
 <h1>毎日頼光</h1>
+ <a>本日は:</a>
+   <div id="DateTimeDisp"></div>
  <img src="../images/14" max-width:100% height="229" border="0">
 </body>
 </html>
