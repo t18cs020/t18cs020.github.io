@@ -1,4 +1,4 @@
-  <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="ja">
 <head>
 <meta charset="UTF-8">
@@ -9,13 +9,113 @@
     var now = new Date();
     function LoadProc() {
       var target = document.getElementById("DateTimeDisp");
-	image_URL = "images/";
-	extension = ".jpg";
+      var elem = document.getElementById("raiko");
+
       var Year = now.getFullYear();
       var Month = now.getMonth()+1;
       var Date = now.getDate();
 
       target.innerHTML = Year + "年" + Month + "月" + Date + "日";
+
+      switch (Date) {
+        case 1:
+          elem.src = "images/1.jpg";
+          break;
+        case 2:
+          elem.src = "images/2.jpg";
+          break;
+        case 3:
+          elem.src = "images/3.jpg";
+          break;
+        case 4:
+          elem.src = "images/4.jpg";
+          break;
+        case 5:
+          elem.src = "images/5.jpg";
+          break;
+        case 6:
+          elem.src = "images/6.jpg";
+          break;
+        case 7:
+          elem.src = "images/7.jpg";
+          break;
+        case 8:
+          elem.src = "images/8.jpg";
+          break;
+        case 9:
+          elem.src = "images/9.jpg";
+          break;
+        case 10:
+          elem.src = "images/10.jpg";
+          break;
+        case 11:
+          elem.src = "images/11.jpg";
+          break;
+        case 12:
+          elem.src = "images/12.jpg";
+          break;
+        case 13:
+          elem.src = "images/13.jpg";
+          break;
+        case 14:
+          elem.src = "images/14.jpg";
+          break;
+        case 15:
+          elem.src = "images/15.jpg";
+          break;
+        case 16:
+          elem.src = "images/16.jpg";
+          break;
+        case 17:
+          elem.src = "images/17.jpg";
+          break;
+        case 18:
+          elem.src = "images/18.jpg";
+          break;
+        case 19:
+          elem.src = "images/19.jpg";
+          break;
+        case 20:
+          elem.src = "images/20.jpg";
+          break;
+        case 21:
+          elem.src = "images/21.jpg";
+          break;
+        case 22:
+          elem.src = "images/22.jpg";
+          break;
+        case 23:
+          elem.src = "images/23.jpg";
+          break;
+        case 24:
+          elem.src = "images/24.jpg";
+          break;
+        case 25:
+          elem.src = "images/25.jpg";
+          break;
+        case 26:
+          elem.src = "images/26.jpg";
+          break;
+        case 27:
+          elem.src = "images/27.jpg";
+          break;
+        case 28:
+          elem.src = "images/28.jpg";
+          break;
+        case 29:
+          elem.src = "images/29.jpg";
+          break;
+        case 30:
+          elem.src = "images/30.jpg";
+          break;
+        case 31:
+          elem.src = "images/31.jpg";
+          break;
+        default:
+          elem.src = "images/error.jpg";
+          break;
+      }
+
     }
   </script>
  <style>
@@ -24,8 +124,8 @@
 </head>
 <body onload="LoadProc();">
 <h1>毎日頼光</h1>
- <a>本日は:</a>
-   <div id="DateTimeDisp"></div>
-<p id="p1">
+<a>本日は:</a>
+  <div id="DateTimeDisp"></div>
+  <img id="raiko" src="images/error.jpg" max-width:100% height="229" border="0">
 </body>
 </html>
